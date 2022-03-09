@@ -50,6 +50,10 @@ el objetivo.
 
 ![Herramienta de Prueba de Requerimientos](https://raw.githubusercontent.com/EduardoUT/fCCProyectos-PaginaDocumentacion/master/assets/img/readme/test.PNG)
 
+**Resultados de Pruebas:**
+
+![Resultado](https://raw.githubusercontent.com/EduardoUT/fCCProyectos-PaginaDocumentacion/master/assets/img/readme/results.PNG)
+
 **Vista Previa:**
 
 ![Vista Previa Página de Documentación Técnica](https://raw.githubusercontent.com/EduardoUT/fCCProyectos-PaginaDocumentacion/master/assets/img/readme/Documentacion_freeCodeCamp.PNG)
