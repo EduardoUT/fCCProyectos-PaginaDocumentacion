@@ -1,0 +1,188 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --font-family: Segoe UI, sans-serif;
+    --font-color: white;
+    --background-div: hsla(0, 4%, 13%, 1);
+    --paragraph-size: 15px;
+    --line-height: 25px;
+    --background-color: #4b8e90;
+    --background-color-nav: #428b64; /* Old Browsers */
+    --hover-color-nav-config_1: #4b8e90;
+    --title-text-size: 27px;
+    --menu-text-size: 18px;
+    --text-weight: bold;
+    --background-color-section-config_1: #0F2027; /* Old Browsers */
+    --background-color-section-config_2: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
+    --background-color-section-config_3: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --font-color-header-section: rgb(0, 0, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-color: var(--background-color);
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: var(--background-color-nav) /**Emerald Green**/;
+    height: 100%;
+    position: fixed;
+}
+
+#img-logo {
+    width: 35px;
+    height: 35px;
+}
+
+#nav-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 6rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--title-text-size);
+    color: var(--font-color);
+    font-weight: var(--text-weight);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.7);
+}
+
+#navbar ul {
+    list-style-type: none;
+    width: inherit;
+    padding-left: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar ul li {
+    width: inherit;
+} 
+
+#navbar ul li .nav-link {
+    display: block;
+    text-decoration: none;
+    font-size: var(--menu-text-size);
+    font-family: var(--font-family);
+    width: inherit;
+    color: var(--font-color);
+    padding: 12px 0px 10px 34px;
+    border-top: 1px solid black;
+    transition: all 0.3s ease;
+    height: 3.1rem;
+}
+
+#navbar ul li .nav-link:hover {
+    background: var(--hover-color-nav-config_1) /**Deep Brunswick green**/;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    width: 100%;
+    border-left: 3px solid gray;
+    padding: 0.8rem;    
+}
+
+#main-doc .main-section {
+    display: block;
+    width: inherit;
+    background: var(--background-color-section-config_1);
+    background: var(--background-color-section-config_2);
+    background: var(--background-color-section-config_3);
+    font-family: var(--font-family);
+    color: var(--font-color);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 2rem;
+    font-size: var(--paragraph-size);
+    box-shadow: 30px 15px 15px 1px rgba(0, 0, 0, 0.4);
+}
+#main-doc .main-section .title {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    text-align: left;
+    background-color: hsl(53.8, 93.3%, 53.1%);
+    font-weight: var(--text-weight);
+    font-size: var(--title-text-size);
+    padding-top: 1.7rem;
+    padding-left: 0.3rem;
+    color: var(--font-color-header-section);
+}
+
+#main-doc .main-section article {
+    margin: 25px;
+}
+
+#main-doc .main-section article .code-slice {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 8px;
+    margin-left: 7px;
+    margin-bottom: 8px;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+#main-doc .main-section article .link-reference:link {
+    color: black;
+}
+
+#main-doc .main-section article .link-reference:visited {
+    color: greenyellow;
+}
+
+@media only screen and (max-width: 815px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        position: static;
+        box-shadow: 30px 15px 15px 1px rgba(0, 0, 0, 0.4);
+    }
+
+    #navbar ul {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #nav-header {
+        height: 4rem;
+    }
+
+    #main-doc {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
